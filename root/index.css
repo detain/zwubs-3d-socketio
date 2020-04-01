@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'Material';
+  src: url(https://cdn.glitch.com/36eb297f-63f5-48da-9b63-9c73fa4c5ac7%2FMaterial.ttf?1516421377891);
+}
+
+body { 
+  
+  margin:0; 
+  
+  overflow: hidden;
+  
+}
+canvas { 
+  
+  width: 100%; 
+  height: 100%;
+  
+}
+
+#content {
+ 
+  height: 100%;
+  width: 100%;
+  
+}
+
+#msgboard {
+  
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+  margin: 5px;
+  
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: Bold;
+  
+  color: #fff; 
+  
+  text-align: right;
+  
+}
+
+#menu {
+
+  height: 25%;
+  width: 25%;
+
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  margin: auto;
+
+  background-color: #222;
+  
+  z-index: 2;
+}
+
+#kill {
+
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: #1a2233;
+
+  opacity:0;
+  visibility: hidden;
+  
+  z-index: 10;
+
+  transition: all 1s ease-in-out;
+
+}
+
+#kill #gameover {
+
+  color: #fd5151;
+  font: 128px 'Bungee';
+  text-align: center;
+  
+  width: 100%;
+
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -75%);
+
+}
+
+#kill .btn {
+
+  color: #fff;
+  font: 32px 'Varela Round';
+
+  letter-spacing: 5px;
+
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%,0%);
+
+  padding: 10px 20px;
+
+  border: 3px solid #fff;
+
+  opacity: .75;
+
+  cursor: pointer;
+
+  transition: all .5s linear;
+
+}
+
+#kill .btn:hover { opacity: 1; }
+#kill .btn:active { transition: all .2s linear; color:#fd5151; border-color: #fd5151; }
+
+#version {
+ 
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  
+  position: absolute;
+  bottom:0%;right:0%;
+    
+  margin: 5px;
+  
+}
+
+#persp {
+				
+  position: absolute;
+  left:0;
+  bottom:0;
+
+  font: 32px "Material";
+  color: #333;
+
+  cursor: pointer;
+
+}
+#persp span { transition: all .3s linear; }
+#persp span:hover { color: #fff; }
+
+
+#info {
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  
+  position: absolute;
+  top:0%;left:0%;
+    
+  margin: 5px;
+
+}
+
+#menu {
+
+  width: 500px;
+  height: 300px;
+
+  position: absolute;
+          left: 0; right: 0; top: 0; bottom: 0;
+          margin: auto;
+
+          background-color: rgba(0,0,0,.85);
+
+          display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+#menu #input {
+
+  height: 40px;
+  width: 250px;
+
+  margin:auto;
+
+  color: #eee;
+  font: 20px "Varela Round";
+  text-align: center;
+
+  outline: none;
+  border: 1px solid #eee;
+
+  background-color: transparent;
+  box-shadow: 0px 5px 5px #000;
+
+  transition: box-shadow .5s linear;
+
+}
+
+#menu #input::-webkit-input-placeholder { color: #bbb !important; transition: all .3s linear; }
+
+#menu #input:focus { box-shadow: 0px 10px 10px #000; }
+
+#menu #input:focus::-webkit-input-placeholder {opacity: 0;}
+
+#menu #color { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+#menu #color span {
+
+  width: 40px;
+  height: 40px;
+
+  margin: auto;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  box-shadow: 0px 2px 2px #000;
+
+  transition: all .1s linear;
+
+}
+
+#menu #color span:hover {
+
+  padding: 2px;
+
+  box-shadow: 0px 5px 5px #000;
+
+}
+
+#menu #enter {
+
+  font: 20px "Varela Round";
+  font-size: 20px;
+
+  color: #eee;
+  background-color: #555;
+
+  margin: auto;
+  padding: 10px 20px 10px 20px;
+  border: none;
+
+  box-shadow: 0px 5px 5px #000;
+
+  cursor: pointer;
+
+  transition: all .3s ease-in-out;
+
+}
+
+#menu #enter:hover {
+
+  background-color: #444;
+  box-shadow: 0px 5px 10px #000;
+
+}
+
+#menu #enter span {
+
+  width: 100%;
+  height: 5px;
+
+  background-color: #fff;
+
+  position: absolute;
+}
+
+
+#menu #colorbar {
+
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 10px;
+
+  background-color: #ff5151;
+
+  transition: all .3s ease-in-out;
+
+}
+
+#mobilecontrols {
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+}
+
+#mobilecontrols #lr, #mobilecontrols #fb {
+
+  position: absolute;
+  bottom: 0;
+
+}
+
+#mobilecontrols #lr { left: 0; display: flex;}
+
+#mobilecontrols #fb { right: 0; }
+
+#mobilecontrols #space { position: absolute; left: 50%; transform: translate(-50%,0); bottom: 0; }
+
+#lr #left, #lr #right, #fb #forward, #fb #backward, #space {
+
+  width: 100px;
+  height: 100px;
+
+  background-color: #fff;
+  opacity: .4;
+
+}

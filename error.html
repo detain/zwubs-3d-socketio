@@ -1,0 +1,89 @@
+<html>
+
+	<head>
+
+		<title>Error | 503</title>
+
+		<meta charset="UTF-8">
+
+		<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    
+    <script src="/socket.io/socket.io.js"></script>
+		
+		<style>
+			
+			body { margin:0; }
+
+			#error {
+
+				position: absolute;
+
+				height: 100%;
+				width: 100%;
+
+				background-color: #eee;
+
+			}
+
+			#error #errinfo {
+
+				position: absolute;
+				top: 35%;
+				left: 50%;
+				transform: translate(-50%, -75%);
+
+				text-align: center;
+
+			}
+
+			#error #errinfo #errcode {
+
+				color: #222;
+
+				font: 128px 'Bungee';
+				line-height: 200px;
+
+			}
+
+			#error #errinfo #errdetails {
+
+				color: #fd5151;
+				font: 32px 'Varela Round';
+
+			}
+      
+      #error #devnote {
+        
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        
+        margin-bottom: 5px;
+        
+        color: #444;
+        font: 16px 'Varela Round'; 
+        text-align: center;
+        
+      }
+        
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="error">
+			<div id="errinfo">
+				<div id="errcode">503</div>
+				<div id="errdetails">The server is down for maintence<br>We'll be back up in a sec</div>
+			</div>
+      
+      <div id="devnote">Dev Note: Adding Lag Correction (☜ ᐖ )☜</div>
+    
+		</div>
+	</body>
+  
+</html>
