@@ -1,0 +1,80 @@
+Panic3D Change Log
+-----------------
+
+I need to make this an html page ┐(;Ծ⌓Ծ;)┌
+
+Change Log Atlas
+	- Feature Added
+	+ Feature In The Works
+	? Feature Is A Possibility
+
+
+
+
+Pre-Alpha (Humble Beginnings)
+
+	- Game Created
+	- Players can move around & jump to their hearts content
+
+
+Alpha 0 (Too many meemees) ( ͡° ͜ʖ ͡°)
+
+	- GameOver added
+	- Jumping removed (temporary)
+	- Players can choose from 8 colors
+	- Random cringey names given to players who don't pick one
+	- If Player's name is "RickAstley" madness ensues
+	- Added Herobrine
+	- Frame Rate issues fixed
+
+
+Alpha 0.1 (Picking up speed) (」ﾟﾛﾟ)｣
+
+  Dev Note: At some point the all code is going to need restructured, I'll have to compensate for some planned additions. So though the game might not see major addition, it'll hopefully run faster and make it so I can add new content easilier.
+
+	- Ground Collision
+	- Jumping added back
+	- New World
+  - Ability for more complex worlds
+	+ Music
+  + Menu system
+  - Fix frame rate movement lag
+	? Shooting (Maybe Next Update?)
+	- Procedural Generation
+  - Soccer Ball
+  + Trees
+	- Removed Herobrine (And RickAstley)
+  
+  Alpha 0.1.1 (THE FPS!!!)
+  - FPS has been siginificantly improved using new algorithim
+  
+  Alpha 0.1.2 (RANDOM FOR THE SAKE OF RANDOM)
+  - Added Random Generation
+  
+  Alpha 0.1.3 (DAS A FOOTBALL) [2-11-18]
+  - Soccer Ball Added
+  - Bug Fixes
+  
+  Alpha 0.1.4 (Ooo Shiny!)
+  - Improved overall look of environment
+  - Added Ambient Occlusion (Not sure if I'll keep it though)
+  - Gave the ball a voice, it's very husky
+  - Jumppads? JUMPPADS!!!
+  
+  Alpha 0.1.5 (I CAN PLAY ON A PHONE!?)
+  - Added mobile support (needs a beefy phone...)
+  - Added trees
+  - Suprise Cube! Much Wow!
+  - Skins Added
+  
+  Alpha 0.1.6
+  - Added Lag Compensation
+  
+  
+I'm wanting to add some minigames, I'm thinking I'll make an infection minigame first where one character is infected and try to get everyone else as well, I'll be designing the map for it soon. Firstly I have to restructure my code so it's more professional and hopefully faster.
+
+I'm thinking about adding a pixelation mode where there is an object you're trying to find, but the closer you get the lower your resolution gets.
+
+AI characters might be a fun experiment in the future, they'd probably be very derpy at first, but that'd be half the fun
+
+☆ﾟ°˖* ᕕ( ᐛ )ᕗ
